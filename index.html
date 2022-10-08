@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Arena Test</title>
+    <meta name="description" content="Arena is a p2p communication protocol to exchange hidden information in pvp games">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bones-css.css" />
+    <link rel="stylesheet" href="css/main.css">
+  
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <h1>Arena protocol?</h1>
+    <h2>a p2p communication protocol to exchange hidden information in pvp games</h2>
+    <div>
+        <label>peer id: <span id='peerId'></span></label>
+        <div>
+            <label>shared keyword: </label> <input id='keyword' type="text"/>
+        </div>
+    </div>
+    <div>
+        <label>connect to: </label> <input id='opponentId' type="text"/>
+        <button id='connect'>Connect</button>
+    </div>
+    <div>
+        <button id='start'>Start Turn</button>
+    </div>
+    <div>
+        <button id='paper'>Paper</button>
+        <button id='rock'>Rock</button>
+        <button id='scissors'>Scissors</button>
+    </div>
+
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="arena.js"></script>
+    <script src="demo.js"></script>
+  </body>
+  
+  </html>
+  
