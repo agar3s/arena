@@ -1,0 +1,25 @@
+{
+  "name": "arena",
+  "version": "0.1.0",
+  "description": "Arena is a p2p communication protocol to exchange hidden information in pvp games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agar3s/arena.git"
+  },
+  "keywords": [
+    "pvp",
+    "p2p",
+    "network",
+    "peerjs"
+  ],
+  "author": "agar3s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agar3s/arena/issues"
+  },
+  "homepage": "https://github.com/agar3s/arena#readme"
+}
