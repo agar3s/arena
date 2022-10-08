@@ -69,7 +69,7 @@ const test = () => {
 
   document.getElementById('start').onclick = (e) =>{
     e.preventDefault();
-    var keyword = document.getElementById('keyword').value;
+    var keyword = document.getElementById('keyword').value || 'ethBogota';
     Arena.startTurn(keyword);
   };
 
