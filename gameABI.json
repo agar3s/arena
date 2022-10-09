@@ -1,0 +1,50 @@
+[
+	{
+		"inputs": [],
+		"name": "getPlayers",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "peerId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "playerName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "status",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct ArenaTest.Player[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "peerId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "playerName",
+				"type": "string"
+			}
+		],
+		"name": "register",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

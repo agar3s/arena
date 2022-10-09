@@ -73,11 +73,35 @@ const test = () => {
     Arena.startTurn(keyword);
   };
 
+  document.getElementById('register').onclick = async (e) => {
+    const accounts = await klaytn.enable();
+    var selectedAccount = accounts[0];
+    
+    const myContract = new caver.klay.Contract(gameABI, '0xc770113F0BD220958049E09117EE333c681Bca90');
+    
+    myContract.send({
+      from: selectedAccount, gas: 1500000, value: 0},
+      'register',
+      peerConnection.id,  'totototototoro')
+      .then(result => {
+        console.log(result);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    /*myContract.methods.getPlayers().call().then(res=>console.log(res));
+    */
+
+  };
+
   document.getElementById('rock').onclick = (e) => Arena.declareAction('rock');
   document.getElementById('paper').onclick = (e) => Arena.declareAction('paper');
   document.getElementById('scissors').onclick = (e) => Arena.declareAction('scissors');
 
 
 };
+
+var gameABI;
+fetch('gameABI.json').then(response => response.json()).then(json => gameABI = json);
 
 test();
